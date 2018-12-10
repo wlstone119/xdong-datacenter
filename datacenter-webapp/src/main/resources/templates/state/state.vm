@@ -1,0 +1,28 @@
+<html> 
+	<head> 
+		<script src="${rc.contextPath}/static/jquery/jquery.js"></script>
+	</head> 
+	<body>  
+		<h4>mysql</h4>
+		<ul>
+			<li>url: ${mysql.datasourceUrl}</li>
+			<li>username: ${mysql.datasourceUsername}</li>
+			<li>status: ${mysql.status}</li>
+		</ul>
+		<h4>redis</h4>
+		<ul>
+			<li>host: ${redis.redisHost}</li>
+			<li>port: ${redis.redisPort}</li>
+			<li>status: ${redis.status}</li>
+		</ul>
+		<h4>zookeeper</h4>
+		<ul>
+			<li>address: ${zookeeper.registryAddress}</li>
+			<li>status: ${zookeeper.status}</li>
+		</ul>
+		<h4>druid</h4>
+		<ul>
+			<li><a href="/druid/index.html">druid</a></li>
+		</ul>
+	</body>  
+</html>     
