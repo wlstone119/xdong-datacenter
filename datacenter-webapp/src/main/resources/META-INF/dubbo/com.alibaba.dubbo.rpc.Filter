@@ -1,1 +1,1 @@
-providerLoggerFilter=com.weidai.creditcenter.filter.ProviderLoggerFilter
+providerLoggerFilter=com.xdong.datacenter.filter.ProviderLoggerFilter
