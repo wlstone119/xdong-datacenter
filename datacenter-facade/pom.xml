@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.xdong.datacenter</groupId>
+	<artifactId>datacenter-facade</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java-version>1.7</java-version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.weidai.zm</groupId>
+			<artifactId>zm-norm</artifactId>
+			<version>optionalAll</version>
+		</dependency>
+		<dependency>
+			<groupId>com.xdong.datacenter</groupId>
+			<artifactId>datacenter-model</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<artifactId>hibernate-validator</artifactId>
+			<groupId>org.hibernate</groupId>
+			<version>5.2.4.Final</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${java-version}</source>
+					<target>${java-version}</target>
+					<encoding>${project.build.sourceEncoding}</encoding>
+				</configuration>
+			</plugin>
+			<!-- attach-sources -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.1.2</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>jar-no-fork</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<version>2.4</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<!-- 用于上传远程maven私服的配置 -->
+	<distributionManagement>
+		<repository>
+			<id>weidai-releases</id>
+			<url>http://maven.weidai.work/nexus/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>weidai-snapshots</id>
+			<url>http://maven.weidai.work/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+</project>

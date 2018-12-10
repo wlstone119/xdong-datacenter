@@ -1,0 +1,10 @@
+<html> 
+<head> 
+<script src="${rc.contextPath}/static/jquery/jquery.js"></script>
+</head> 
+<body>  
+hello word!
+<br/>
+$dateTool
+</body>  
+</html> 
