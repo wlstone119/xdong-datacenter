@@ -1,4 +1,4 @@
-package com.xdong.datacenter.filter.util;
+package com.xdong.datacenter.filter;
 
 import com.alibaba.dubbo.common.extension.Activate;
 import com.alibaba.dubbo.rpc.Filter;
