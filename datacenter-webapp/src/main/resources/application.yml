@@ -39,21 +39,21 @@ spring:
         retries: 0
         delay: -1
         group: 
-        package: com.weidai.datacenter.provider
+        package: com.xdong.datacenter.provider
 logging :
     config :
       classpath : log4j2.properties
     level:
       com:
-        weidai:
-          creditcenter:
+        xdong:
+          datacenter:
             dal:
               mapper: debug
                 
 mybatis-plus:
   mapper-locations: classpath:mapper/*.xml
   #实体扫描，多个package用逗号或者分号分隔
-  typeAliasesPackage: com.weidai.datacenter.dal.entity
+  typeAliasesPackage: com.xdong.datacenter.dal.entity
   typeEnumsPackage: 
   global-config:
     #主键类型  0:"数据库ID自增", 1:"用户输入ID",2:"全局唯一ID (数字类型唯一ID)", 3:"全局唯一ID UUID";
