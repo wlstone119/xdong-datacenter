@@ -114,8 +114,8 @@ public class Generator {
                                 //.setSuperServiceClass("com.weidai.mp.support.service.IMPService")
                                 // 自定义 service 实现类父类
                                 //.setSuperServiceImplClass("com.weidai.mp.support.service.impl.MPServiceImpl")
-                                .setSuperFacadeClass("com.weidai.creditcenter.facade.api.base.BaseFacade")
-                                .setSuperFacadeImplClass("com.weidai.creditcenter.provider.base.BaseFacadeImpl")
+                                .setSuperFacadeClass("com.xdong.datacenter.facade.api.base.BaseFacade")
+                                .setSuperFacadeImplClass("com.xdong.datacenter.provider.base.BaseFacadeImpl")
                                 // 自定义 controller 父类
                                 // .setSuperControllerClass("com.weidai.demo.TestController")
                                 // 【实体】是否生成字段常量（默认 false）
@@ -143,7 +143,7 @@ public class Generator {
                         .setServiceImpl("service.image")
                         .setFacacde("facade.api.inner.image")
                         .setFacacdeImpl("provider.inner.image")
-                        .setParent("com.weidai.creditcenter")// 自定义包路径
+                        .setParent("com.xdong.datacenter")// 自定义包路径
                                // .setController("controller")// 这里是控制器包名，默认 web
                 ).setCfg(
                         // 注入自定义配置，可以在 VM 中使用 cfg.abc 设置的值
