@@ -197,7 +197,7 @@
 			<dependency>
 				<groupId>com.weidai.mp.support</groupId>
 				<artifactId>mpweidai-support</artifactId>
-				<version>1.0.4-SNAPSHOT</version>
+				<version>1.0.6</version>
 				<exclusions>
 					<exclusion>
 						<groupId>org.springframework.boot</groupId>

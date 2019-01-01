@@ -19,7 +19,7 @@ import com.alibaba.druid.pool.DruidDataSource;
 import com.baomidou.mybatisplus.plugins.PaginationInterceptor;
 
 @Configuration
-@MapperScan(value = "com.weidai.creditcenter.dal.mapper.*")
+@MapperScan(value = "com.weidai.datacenter.dal.mapper.*")
 public class DatabaseConfiguration implements EnvironmentAware {
 
     private static final Logger     LOGGER = org.slf4j.LoggerFactory.getLogger(DatabaseConfiguration.class);
